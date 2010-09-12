@@ -30,7 +30,7 @@ div#container {
 	margin: 0 auto 20px;
 	font-family: "museo-sans-1","museo-sans-2","Helvetica Neue",HelveticaNeue,Helvetica, Arial,sans-serif;
 }
-h1 {
+div#header h1 {
 	width: 480px;
 	height: 102px;
 	background: transparent url(ds_logo.png) no-repeat scroll left top;
@@ -39,16 +39,16 @@ h1 {
 	position: relative;
 	text-indent: -9999px;
 }
-h1 a {
+div#header h1 a {
 	display:block;
 	width: 480px;
 	height: 102px;
 	border-style: none;
 }
-h1 a span {
+div#header h1 a span {
 	display: none;
 }
-h3 {
+div#header h3 {
 	width: 116px;
 	height: 41px;
 	background: transparent url(app_store_badge.png) no-repeat scroll left top;
@@ -57,13 +57,13 @@ h3 {
 	position: relative;
 	text-indent: -9999px;
 }
-h3 a {
+div#header h3 a {
 	display:block;
 	width: 116px;
 	height: 41px;
 	border-style: none;
 }
-h3 a span {
+div#header h3 a span {
 	display: none;
 }
 div#ipad {
@@ -163,4 +163,32 @@ ul.legal {
 #footer ul.legal li a:hover {
 	text-decoration: underline;
 	color: #3366cc;
+}
+div#content {
+	width: 544px;
+	margin: 132px 0 40px 273px;
+	color: #fff;
+	font-size: .8em;
+	line-height: 1.2em;
+}
+div#content p {
+	margin-bottom: 1em;
+}
+div#content h2 {
+	font-size: 2em;
+	font-weight: bold;
+	margin: 1em 0 .5em;
+}
+div#content h3 {
+	text-indent: 0;
+	margin: 1em 0 .5em;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+div#content strong {
+	font-weight: bold;
+}
+div#content em {
+	font-style: italic;
 }
