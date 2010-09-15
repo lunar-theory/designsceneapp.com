@@ -29,6 +29,7 @@ div#container {
 	padding-bottom: 10px;
 	margin: 0 auto 20px;
 	font-family: "museo-sans-1","museo-sans-2","Helvetica Neue",HelveticaNeue,Helvetica, Arial,sans-serif;
+	font-weight: 300;
 }
 div#header h1 {
 	width: 480px;
@@ -139,6 +140,7 @@ div#footer {
 	font-size: .8em;
 	line-height: 1.2em;
 	text-decoration: none;
+	font-weight: 500;
 	width: 437px;
 	height: 80px;
 }
@@ -169,7 +171,7 @@ div#content {
 	margin: 132px 0 40px 273px;
 	color: #fff;
 	font-size: .8em;
-	line-height: 1.2em;
+	line-height: 1.3em;
 }
 div#content p {
 	margin-bottom: 1em;
@@ -186,8 +188,13 @@ div#content h3 {
 	font-weight: bold;
 	text-transform: uppercase;
 }
+div#content li {
+	list-style-position: outside;
+	list-style-type: decimal;
+	margin: 0 0 .5em 1.5em;
+}
 div#content strong {
-	font-weight: bold;
+	font-weight: 700;
 }
 div#content em {
 	font-style: italic;
