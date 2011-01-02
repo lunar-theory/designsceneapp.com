@@ -28,8 +28,8 @@ div#container {
 	text-align:left;
 	padding-bottom: 10px;
 	margin: 0 auto 20px;
-	/*font-family: "Helvetica Neue",HelveticaNeue,Helvetica, Arial,sans-serif;
-	font-weight: 300;*/
+	font-weight: 400;
+	font-style: normal;
 }
 div#header h1 {
 	width: 480px;
@@ -54,8 +54,8 @@ div#movie {
 }
 div#description {
 	color: #fff;
-	font-size: 1.1em;
-	line-height: 1.3em;
+	font-size: 1.2em;
+	line-height: 1.6em;
 	margin-left: 271px;
 	width: 489px;
 }
@@ -95,11 +95,19 @@ li.btnAppStore a span, li.btnBuy a span {
 div#description p {
 	margin: 30px 0 15px;
 }
+div#description p em {
+	font-weight: 700;
+	font-style: italic;
+}
 div#description p.features {
 	margin: 20px 0 4px;
+	font-weight: 700;
+	font-style: italic;
+	text-transform: uppercase;
+	letter-spacing: .12em;
 }
 div#description ul.features li {
-	margin: 0 0 4px;
+	margin: 0;
 	list-style-type: disc;
 	list-style-position: inside;
 }
@@ -165,4 +173,6 @@ div#content strong {
 }
 div#content em {
 	font-style: italic;
+}
+p.features {
 }
