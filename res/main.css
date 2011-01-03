@@ -19,7 +19,7 @@ html {
 	background: #000 none no-repeat scroll 50% 0;
 }
 body {
-	background:url("main_bg.jpg") no-repeat scroll 50% 0 transparent;
+	background: transparent url("main_bg.jpg") no-repeat scroll 50% 0;
 	text-align:center;
 }
 div#container {
@@ -35,8 +35,8 @@ div#header h1 {
 	width: 480px;
 	height: 102px;
 	background: transparent url(ds_logo.png) no-repeat scroll left top;
-	left: 271px;
-	top: 110px;
+	left: 233px;
+	top: 105px;
 	position: relative;
 	text-indent: -9999px;
 }
@@ -46,48 +46,64 @@ div#header h1 a {
 	height: 102px;
 	border-style: none;
 }
-div#header h1 a span {
+div#header h3 {
+	width: 147px;
+	height: 51px;
+	left: 774px;
+	top: 115px;
+	position: absolute;
+	text-indent: -9999px;
+}
+div#header h3 a {
+	display:block;
+	width: 147px;
+	height: 50px;
+	background: transparent url(btn_appstore.png) no-repeat scroll left top;
+	border-style: none;
+}
+div#header h3 a:hover {
+	background-position: 0 -51px;
+}
+div#header h3 a:active {
+	background-position: 0 -102px;
+}
+div#header h1 a span,div#header h3 a span {
 	display: none;
 }
 div#movie {
-	margin: 142px 0 40px 271px;
+	margin: 40px 0 30px;
 }
 div#description {
 	color: #fff;
-	font-size: 1.2em;
-	line-height: 1.6em;
-	margin-left: 271px;
-	width: 489px;
+	font-size: 1.875em;
+	line-height: 1.5em;
+	width: 687px;
+	margin: 72px 0 0 233px;
 }
-li.btnAppStore {
-	float: left;
-}
-li.btnAppStore a {
-	width: 188px;
-	height: 65px;
-	text-indent: -9999px;
-	background: transparent url(btn_appstore.png) no-repeat scroll 0 0;
-	display: block;
-}
-li.btnBuy {
+p.btnBuy {
 	float: left;
 	margin-right: 40px;
 }
-li.btnBuy a {
+p.btnBuy a {
 	width: 180px;
-	height: 65px;
+	height: 64px;
 	text-indent: -9999px;
 	background: transparent url(btn_buynow.png) no-repeat scroll 0 0;
 	display: block;
 }
-li.btnAppStore a:hover, li.btnBuy a:hover {
+p.btnBuy a:hover {
 	background-position: 0 -65px;
 }
-li.btnAppStore a:active, li.btnBuy a:active {
+p.btnBuy a:active {
 	background-position: 0 -130px;
 }
-li.btnAppStore a span, li.btnBuy a span {
+p.btnBuy a span {
 	display: none;
+}
+div#features {
+	float: left;
+	width: 467px;
+	margin: 6px 0 0 40px;
 }
 .clear {
 	clear: both;
@@ -99,29 +115,37 @@ div#description p em {
 	font-weight: 700;
 	font-style: italic;
 }
-div#description p.features {
+div#features p {
 	margin: 20px 0 4px;
 	font-weight: 700;
-	font-style: italic;
+	font-style: normal;
 	text-transform: uppercase;
-	letter-spacing: .12em;
+	font-size: .553em;
+	line-height: 1.5em;
 }
-div#description ul.features li {
+div#features ul li {
 	margin: 0;
 	list-style-type: disc;
 	list-style-position: inside;
+	font-weight: 400;
+	font-style: italic;
+	font-size: .667em;
+	line-height: 1.2em;
 }
 div#footer {
-	margin: 60px 0 30px 271px;
+	margin: 60px 0 30px 233px;
 	color: #999;
 	font-size: .8em;
+	font-weight: 300;
 	line-height: 1.2em;
 	text-decoration: none;
-	font-weight: 500;
-	width: 489px;
+	width: 687px;
 	height: 100px;
+	border-top: 1px solid #ccc;
+	padding-top: 30px;
 }
 ul.links {
+	width: 180px;
 	float: left;
 	margin-right: 3em;
 }
@@ -173,6 +197,4 @@ div#content strong {
 }
 div#content em {
 	font-style: italic;
-}
-p.features {
 }
