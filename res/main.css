@@ -74,9 +74,8 @@ div#movie {
 	margin: 40px 0 30px;
 }
 div#description {
+	font: 1.875em/1.5em Georgia, "Times New Roman", Times, serif;	
 	color: #fff;
-	font-size: 1.875em;
-	line-height: 1.5em;
 	width: 687px;
 	margin: 72px 0 0 233px;
 }
@@ -127,10 +126,7 @@ div#features ul li {
 	margin: 0;
 	list-style-type: disc;
 	list-style-position: inside;
-	font-weight: 400;
-	font-style: italic;
-	font-size: .667em;
-	line-height: 1.2em;
+	font: italic 400 .667em/1.2em Georgia, "Times New Roman", Times, serif;
 }
 div#footer {
 	margin: 60px 0 30px 233px;
@@ -166,9 +162,9 @@ ul.legal {
 	color: #3366cc;
 }
 div#content {
-	width: 544px;
-	margin: 132px 0 40px 273px;
 	color: #fff;
+	width: 687px;
+	margin: 92px 0 0 233px;
 	font-size: .8em;
 	line-height: 1.3em;
 }
@@ -177,14 +173,14 @@ div#content p {
 }
 div#content h2 {
 	font-size: 2em;
-	font-weight: bold;
+	font-weight: 700;
 	margin: 1em 0 .5em;
 }
 div#content h3 {
 	text-indent: 0;
 	margin: 1em 0 .5em;
 	font-size: 1.2em;
-	font-weight: bold;
+	font-weight: 700;
 	text-transform: uppercase;
 }
 div#content li {
@@ -197,4 +193,46 @@ div#content strong {
 }
 div#content em {
 	font-style: italic;
+}
+form {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+form p {
+	margin: 20px 0 10px;
+}
+select,input,textarea {
+	border: 1px solid #fff;
+	border-radius: 5px;
+	color: #666;
+	width: 400px;
+	font-size: 1.4em;
+}
+input,textarea {
+	padding: 4px 8px;
+}
+select:focus,select:hover,
+input:focus,input:hover,
+textarea:focus,textarea:hover {
+	border: 1px solid #3366cc;
+}
+input.btn {
+	padding: 0;
+	width: 120px;
+	height: 45px;
+	background: transparent url(btn_send.png) no-repeat scroll 0 0;
+	border-style: none;
+}
+input.btn:hover {
+	background-position: 0 -45px;
+}
+input.btn:active {
+	background-position: 0 -90px;
+}
+label {
+	display: inline-block;
+	margin: 0 0 10px;
+	font-weight: 700;
+	font-style: normal;
+	text-transform: uppercase;
+	font-size: .9em;
 }
