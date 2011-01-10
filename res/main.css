@@ -237,3 +237,14 @@ label {
 	text-transform: uppercase;
 	font-size: .9em;
 }
+
+/* COMING SOON STYLES ONLY */
+
+div#features {
+	margin-left: 0px;
+}
+.soon {
+	font-weight: 400;
+	font-style: italic;
+	color: #305cb6;
+}
