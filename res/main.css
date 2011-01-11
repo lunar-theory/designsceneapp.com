@@ -248,3 +248,41 @@ div#features {
 	font-style: italic;
 	color: #305cb6;
 }
+
+/* CONTEST STYLES */
+div#contest {
+	font: 1.5em/1.5em Georgia, "Times New Roman", Times, serif;	
+	color: #fff;
+	width: 687px;
+	margin: 72px 0 0 233px;
+}
+div#contest h2 {
+	width: 347px;
+	height: 69px;
+	background: transparent url(h2_inspires.png) no-repeat scroll left top;
+	text-indent: -9999px;
+	margin: 40px 0 30px;
+}
+div#contest ul {
+	margin: 20px 0 30px 40px;
+}
+
+div#contest ul li {
+	margin: 0 0 10px;
+	list-style-type: disc;
+	list-style-position: inside;
+	font: italic 400 .667em/1.2em Georgia, "Times New Roman", Times, serif;
+}
+div#contest ul ul {
+	margin: 0 0 10px 40px;
+}
+div#contest ul ul li {
+	margin: 0;
+}
+div#contest p em {
+	font-weight: 700;
+	font-style: italic;
+}
+
+
+
