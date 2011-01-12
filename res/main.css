@@ -192,6 +192,11 @@ div#content strong {
 div#content em {
 	font-style: italic;
 }
+div#share {
+	margin: 40px 0 0;
+	padding: 0;
+}
+
 form {
 	font-family: "Museo Sans", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
@@ -236,6 +241,12 @@ label {
 	font-size: .9em;
 }
 
+.addthis_toolbox, .addthis_default_style {
+	margin: 0;
+	padding: 0;
+	width: 300px;
+}
+
 /* CONTEST STYLES */
 div#contest {
 	font: 1.5em/1.5em "Minion Pro", Georgia, "Times New Roman", Times, serif;	
@@ -249,7 +260,11 @@ div#contest h2 {
 	background: transparent url(h2_inspires.png) no-repeat scroll left top;
 	text-indent: -9999px;
 	margin: 40px 0 30px;
+	display: inline-block;
+	float: left;
 }
+
+
 div#contest ul {
 	margin: 20px 0 30px 40px;
 }
@@ -289,6 +304,18 @@ div#contest ul#sponsors li {
 	margin: 20px 0 0;
 }
 
+li#commarts a {
+	float: left;
+	width: 185px;
+	height: 43px;
+	text-indent: -9999px;
+	background: transparent url(contest_commarts.png) no-repeat scroll 0 -43px;
+	margin: 14px 30px 0 0;
+	padding: 0;
+}
+li#commarts a:hover {
+	background-position: 0 0px;
+}
 
 li#printmag a {
 	float: left;
@@ -315,18 +342,6 @@ li#how a {
 li#how a:hover {
 	background-position: 0 0px;
 }
-li#commarts a {
-	float: left;
-	width: 185px;
-	height: 43px;
-	text-indent: -9999px;
-	background: transparent url(contest_commarts.png) no-repeat scroll 0 -43px;
-	margin: 14px 30px 0 0;
-	padding: 0;
-}
-li#commarts a:hover {
-	background-position: 0 0px;
-}
 li#smashing a {
 	float: left;
 	width: 220px;
@@ -340,8 +355,13 @@ li#smashing a:hover {
 	background-position: 0 0px;
 }
 
+div#contestshare {
+	margin: 0 0 0 30px;
+	float: left;
+}
 p.btnEnter {
 	margin: 0 40px 60px 0;
+	float: left;
 }
 p.btnEnter a {
 	width: 200px;
