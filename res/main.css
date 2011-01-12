@@ -131,14 +131,12 @@ div#features ul li {
 div#footer {
 	margin: 60px 0 30px 233px;
 	color: #999;
-	font-size: .8em;
-	font-weight: 300;
-	line-height: 1.2em;
 	text-decoration: none;
 	width: 687px;
 	height: 100px;
 	border-top: 1px solid #ccc;
 	padding-top: 30px;
+	font: 300 .8em/1.2em "Museo Sans", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 ul.links {
 	width: 180px;
@@ -238,17 +236,6 @@ label {
 	font-size: .9em;
 }
 
-/* COMING SOON STYLES ONLY */
-
-div#features {
-	margin-left: 0px;
-}
-.soon {
-	font-weight: 400;
-	font-style: italic;
-	color: #305cb6;
-}
-
 /* CONTEST STYLES */
 div#contest {
 	font: 1.5em/1.5em "Minion Pro", Georgia, "Times New Roman", Times, serif;	
@@ -282,6 +269,104 @@ div#contest ul ul li {
 div#contest p em {
 	font-weight: 700;
 	font-style: italic;
+}
+p.thanks {
+	font: .5em "Museo Sans", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: .25em;
+}
+div#contest ul#sponsors {
+	margin: 20px 0 0;
+	padding: 0;
+}
+div#contest ul#sponsors li {
+	display: block;
+	padding: 0;
+	margin: 20px 0 0;
+}
+
+
+li#printmag a {
+	float: left;
+	list-style-type: none;
+	width: 177px;
+	height: 47px;
+	text-indent: -9999px;
+	background: transparent url(contest_print.png) no-repeat scroll 0 -47px;
+	margin: 20px 40px 0 0;
+	padding: 0;
+}
+li#printmag a:hover {
+	background-position: 0 0px;
+}
+li#how a {
+	float: left;
+	width: 104px;
+	height: 68px;
+	text-indent: -9999px;
+	background: transparent url(contest_how.png) no-repeat scroll 0 -68px;
+	margin: 0 38px 0 0;
+	padding: 0;
+}
+li#how a:hover {
+	background-position: 0 0px;
+}
+li#commarts a {
+	float: left;
+	width: 290px;
+	height: 67px;
+	text-indent: -9999px;
+	background: transparent url(contest_commarts.png) no-repeat scroll 0 -67px;
+	margin: 0 38px 0 0;
+	padding: 0;
+}
+li#commarts a:hover {
+	background-position: 0 0px;
+}
+li#smashing a {
+	float: left;
+	width: 259px;
+	height: 76px;
+	text-indent: -9999px;
+	background: transparent url(contest_smashing.png) no-repeat scroll 0 -76px;
+	padding: 0;
+	margin: 0;
+	left: 214px;
+	position: relative;
+	display: inline-block;
+}
+li#smashing a:hover {
+	background-position: 0 0px;
+}
+
+p.btnEnter {
+	margin: 0 40px 40px 0;
+}
+p.btnEnter a {
+	width: 200px;
+	height: 64px;
+	text-indent: -9999px;
+	background: transparent url(btn_enternow.png) no-repeat scroll 0 0;
+	display: block;
+}
+p.btnEnter a:hover {
+	background-position: 0 -65px;
+}
+p.btnEnter a:active {
+	background-position: 0 -130px;
+}
+p.btnEnter a span {
+	display: none;
+}
+/* COMING SOON STYLES ONLY */
+
+div#features {
+	margin-left: 0px;
+}
+.soon {
+	font-weight: 400;
+	font-style: italic;
+	color: #305cb6;
 }
 
 
