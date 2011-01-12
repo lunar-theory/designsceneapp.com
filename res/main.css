@@ -10,7 +10,7 @@ html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pr
 /* -----DESIGNSCENE CSS----- */
 a,a:link,a:visited {
 	text-decoration: underline;
-	color: #999;
+	color: #ccc;
 }
 a:hover {
 	color: #3366cc;
@@ -257,14 +257,17 @@ div#contest ul {
 div#contest ul li {
 	margin: 0 0 10px;
 	list-style-type: disc;
-	list-style-position: inside;
+	list-style-position: outside;
 	font: italic 400 .667em/1.2em "Minion Pro", Georgia, "Times New Roman", Times, serif;
 }
 div#contest ul ul {
-	margin: 0 0 10px 40px;
+	margin: 0 0 20px 40px;
 }
 div#contest ul ul li {
-	margin: 0;
+	margin: 0 0 6px;
+}
+div#contest p {
+	margin-bottom: 20px;
 }
 div#contest p em {
 	font-weight: 700;
@@ -274,6 +277,7 @@ p.thanks {
 	font: .5em "Museo Sans", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	text-transform: uppercase;
 	letter-spacing: .25em;
+	padding-top: 30px;
 }
 div#contest ul#sponsors {
 	margin: 20px 0 0;
@@ -289,11 +293,11 @@ div#contest ul#sponsors li {
 li#printmag a {
 	float: left;
 	list-style-type: none;
-	width: 177px;
-	height: 47px;
+	width: 113px;
+	height: 30px;
 	text-indent: -9999px;
-	background: transparent url(contest_print.png) no-repeat scroll 0 -47px;
-	margin: 20px 40px 0 0;
+	background: transparent url(contest_print.png) no-repeat scroll 0 -30px;
+	margin: 27px 30px 0 0;
 	padding: 0;
 }
 li#printmag a:hover {
@@ -301,11 +305,11 @@ li#printmag a:hover {
 }
 li#how a {
 	float: left;
-	width: 104px;
-	height: 68px;
+	width: 66px;
+	height: 43px;
 	text-indent: -9999px;
-	background: transparent url(contest_how.png) no-repeat scroll 0 -68px;
-	margin: 0 38px 0 0;
+	background: transparent url(contest_how.png) no-repeat scroll 0 -43px;
+	margin: 14px 30px 0 0;
 	padding: 0;
 }
 li#how a:hover {
@@ -313,11 +317,11 @@ li#how a:hover {
 }
 li#commarts a {
 	float: left;
-	width: 290px;
-	height: 67px;
+	width: 185px;
+	height: 43px;
 	text-indent: -9999px;
-	background: transparent url(contest_commarts.png) no-repeat scroll 0 -67px;
-	margin: 0 38px 0 0;
+	background: transparent url(contest_commarts.png) no-repeat scroll 0 -43px;
+	margin: 14px 30px 0 0;
 	padding: 0;
 }
 li#commarts a:hover {
@@ -325,22 +329,19 @@ li#commarts a:hover {
 }
 li#smashing a {
 	float: left;
-	width: 259px;
-	height: 76px;
+	width: 220px;
+	height: 65px;
 	text-indent: -9999px;
-	background: transparent url(contest_smashing.png) no-repeat scroll 0 -76px;
+	background: transparent url(contest_smashing.png) no-repeat scroll 0 -65px;
 	padding: 0;
 	margin: 0;
-	left: 214px;
-	position: relative;
-	display: inline-block;
 }
 li#smashing a:hover {
 	background-position: 0 0px;
 }
 
 p.btnEnter {
-	margin: 0 40px 40px 0;
+	margin: 0 40px 60px 0;
 }
 p.btnEnter a {
 	width: 200px;
