@@ -13,6 +13,7 @@ a,a:link,a:visited {
 	color: #bfdefc;
 }
 a:hover {
+	text-decoration: underline;
 	color: #3366cc;
 }
 html {
@@ -151,9 +152,19 @@ ul.legal {
 	line-height: 1.2em;
 	color: #666;
 }
-#footer ul.legal li a,#footer ul.legal li a:link,#footer ul.legal li a:visited {
+
+#footer a,#footer a:link,#footer a:visited {
+	text-decoration: none;
+	color: #ccc;
+}
+#footer a:hover {
 	text-decoration: underline;
-	color: #555;
+	color: #3366cc;
+}
+
+#footer ul.legal li a,#footer ul.legal li a:link,#footer ul.legal li a:visited {
+	text-decoration: none;
+	color: #666;
 }
 #footer ul.legal li a:hover {
 	text-decoration: underline;
@@ -273,7 +284,7 @@ div#contest ul li {
 	margin: 0 0 10px;
 	list-style-type: disc;
 	list-style-position: outside;
-	font: italic 400 .667em/1.2em "Minion Pro", Georgia, "Times New Roman", Times, serif;
+	font: italic 400 .8em/1.2em "Minion Pro", Georgia, "Times New Roman", Times, serif;
 }
 div#contest ul ul {
 	margin: 0 0 20px 40px;
