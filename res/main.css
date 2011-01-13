@@ -9,8 +9,8 @@ html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pr
 
 /* -----DESIGNSCENE CSS----- */
 a,a:link,a:visited {
-	text-decoration: underline;
-	color: #ccc;
+	text-decoration: none;
+	color: #bfdefc;
 }
 a:hover {
 	color: #3366cc;
