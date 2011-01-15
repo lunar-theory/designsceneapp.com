@@ -173,10 +173,9 @@ ul.legal {
 }
 div#content {
 	color: #fff;
-	width: 687px;
-	margin: 92px 0 0 233px;
-	font-size: .8em;
-	line-height: 1.3em;
+	width: 640px;
+	margin: 130px 0 0 233px;
+	font: .8em/1.3em "Museo Sans", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 div#content p {
 	margin-bottom: 1em;
