@@ -71,14 +71,16 @@ div#header h3 a:active {
 div#header h1 a span,div#header h3 a span {
 	display: none;
 }
-div#movie {
-	margin: 40px 0 30px;
-}
+
 div#description {
 	font: 1.875em/1.5em "Minion Pro", Georgia, "Times New Roman", Times, serif;	
 	color: #fff;
-	width: 687px;
+	width: 640px;
 	margin: 72px 0 0 233px;
+}
+
+div#movie {
+	margin: 40px 0 30px;
 }
 p.btnBuy {
 	float: left;
@@ -100,20 +102,18 @@ p.btnBuy a:active {
 p.btnBuy a span {
 	display: none;
 }
-div#features {
-	float: left;
-	width: 467px;
-	margin: 6px 0 0 40px;
-}
-.clear {
-	clear: both;
-}
 div#description p {
 	margin: 30px 0 15px;
 }
 div#description p em {
 	font-weight: 700;
 	font-style: italic;
+}
+
+div#features {
+	float: left;
+	width: 420px;
+	margin: 6px 0 0 40px;
 }
 div#features p {
 	margin: 20px 0 4px;
@@ -133,7 +133,7 @@ div#footer {
 	margin: 60px 0 30px 233px;
 	color: #999;
 	text-decoration: none;
-	width: 687px;
+	width: 640px;
 	height: 100px;
 	border-top: 1px solid #ccc;
 	padding-top: 30px;
@@ -152,7 +152,9 @@ ul.legal {
 	line-height: 1.2em;
 	color: #666;
 }
-
+.clear {
+	clear: both;
+}
 #footer a,#footer a:link,#footer a:visited {
 	text-decoration: none;
 	color: #ccc;
@@ -161,7 +163,6 @@ ul.legal {
 	text-decoration: underline;
 	color: #3366cc;
 }
-
 #footer ul.legal li a,#footer ul.legal li a:link,#footer ul.legal li a:visited {
 	text-decoration: none;
 	color: #666;
@@ -207,7 +208,6 @@ div#share {
 	margin: 40px 0 0;
 	padding: 0;
 }
-
 form {
 	font-family: "Museo Sans", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
@@ -259,6 +259,18 @@ label {
 }
 
 /* CONTEST STYLES */
+div#promo {
+	background: transparent url(contest_promo.png) no-repeat scroll 0 0;
+}
+div#promo a {
+	width: 640px;
+	height: 200px;
+	text-indent: -9999px;
+	display: block;
+}
+div#promo a:hover {
+	background: transparent url(contest_promo_hover.png) no-repeat scroll 0 0;
+}
 div#contest {
 	font: 1.5em/1.5em "Minion Pro", Georgia, "Times New Roman", Times, serif;	
 	color: #fff;
@@ -268,7 +280,7 @@ div#contest {
 div#contest h2 {
 	width: 347px;
 	height: 69px;
-	background: transparent url(h2_inspires.png) no-repeat scroll left top;
+	background: transparent url(contest_h2_inspires.png) no-repeat scroll left top;
 	text-indent: -9999px;
 	margin: 40px 0 30px;
 	display: inline-block;

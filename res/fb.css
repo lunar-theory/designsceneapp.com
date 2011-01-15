@@ -139,5 +139,19 @@ ul.legal {
 	color: #3366cc;
 }
 
+/* CONTEST STYLES */
+div#promo {
+	background: transparent url(contest_promo.png) no-repeat scroll 0 0;
+}
+div#promo a {
+	width: 640px;
+	height: 200px;
+	text-indent: -9999px;
+	display: block;
+}
+div#promo a:hover {
+	background: transparent url(contest_promo_hover.png) no-repeat scroll 0 0;
+}
+
 
 
