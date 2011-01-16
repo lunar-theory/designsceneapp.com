@@ -277,13 +277,13 @@ div#contest {
 	margin: 72px 0 0 233px;
 }
 div#contest h2 {
-	width: 347px;
-	height: 69px;
+	width: 687px;
+	height: 132px;
 	background: transparent url(contest_h2_inspires.png) no-repeat scroll left top;
 	text-indent: -9999px;
-	margin: 40px 0 30px;
 	display: inline-block;
 	float: left;
+	margin: 40px 0 30px -60px;
 }
 
 
