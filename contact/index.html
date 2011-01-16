@@ -51,6 +51,7 @@
                           message = '<p class="error">Oops, something went wrong on our end. Please try again later..</p>';
                       },
                       complete: function () {
+                          message = jQuery(message);
                           message.hide();
                           $('#contactform').before(message);
                           message.fadeIn(500);
