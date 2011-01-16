@@ -18,6 +18,7 @@
 		<style type="text/css" media="screen">
 			/*<!CDATA[*/ @import url(../res/main.css); /*]]>*/
 		</style>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
 		<script type="text/javascript" src="http://use.typekit.com/soi1irf.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 		<script type="text/javascript">
@@ -31,6 +32,33 @@
 		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		  })();
 		</script>
+        <script>
+          $(document).ready(function() {
+              $('#contactform').submit(function (e) {
+                  e.preventDefault();
+                  var form = $(this);
+                  $.ajax({
+                      url: form.attr('action'),
+                      type: form.attr('method'),
+                      contentType: form.attr('enctype'),
+                      data: form.serialize(),
+                      dataType: 'html',
+                      success: function () {
+                          var thanks = jQuery('<p class="success">Sent! Thank you for taking the time to be in touch.</p>');
+                          thanks.hide();
+                          $('#contactform').before(thanks);
+                          thanks.fadeIn(500);
+                      },
+                      error: function (xhr) {
+                          var err = jQuery(xhr.responseText);
+                          err.hide();
+                          $('#contactform').before(err);
+                          err.fadeIn(500);
+                      }
+                  });
+              });
+          });
+        </script>
 	</head>
 	<body>
 		<div id="container">
@@ -41,7 +69,7 @@
 			<div id="content">
 				<br class="clear">
 				<h2>Contact Us</h2>
-				<form id="contactform" name="contactform" method="post" action="http://www.lunar-theory.com:9090/contact">
+				<form id="contactform" name="contactform" method="post" action="http://www.lunar-theory.com:9090/contact" enctype="application/x-www-form-urlencoded; charset=UTF-8">
                     <input type="hidden" name="app" value="DesignScene" />
 					<p>
 						<label for="type">Type of Request</label><br />
