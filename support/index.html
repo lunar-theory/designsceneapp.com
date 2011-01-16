@@ -44,13 +44,14 @@
 			<div id="content">
 				<br class="clear">
 				<h2>Contact Us</h2>
-				<form id="contactform" name="contactform" method="post" action="">
+				<form id="contactform" name="contactform" method="post" action="http://www.lunar-theory.com:9090/contact">
+                    <input type="hidden" name="app" value="DesignScene" />
 					<p>
-						<label for="request">Type of Request</label><br />
-						<select name="request" id="request">
+						<label for="type">Type of Request</label><br />
+						<select name="type" id="request">
 							<option value="support">Get support</option>
 							<option value="suggest">Suggest a site</option>
-							<option value="general">General inquiry</option>
+							<option value="info">General inquiry</option>
 						</select>
 						</p>
 					<p>
@@ -62,8 +63,8 @@
 						<input type="text" name="email" id="email" />
 					</p>
 					<p>
-						<label for="message">Message</label><br />
-						<textarea name="message" cols="40" rows="8" id="message"></textarea>
+						<label for="body">Message</label><br />
+						<textarea name="body" cols="40" rows="8" id="body"></textarea>
 					</p>
 					<p>
 						<input class="btn" type="image" src="../res/btn_send_clear.png" name="submit" id="submit" value="Send" />
