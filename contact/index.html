@@ -21,7 +21,6 @@
 		<script type="text/javascript" src="http://use.typekit.com/soi1irf.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 		<script type="text/javascript">
-		
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-20523658-1']);
 		  _gaq.push(['_trackPageview']);
@@ -31,9 +30,7 @@
 		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		  })();
-		
 		</script>
-
 	</head>
 	<body>
 		<div id="container">
@@ -49,11 +46,15 @@
 					<p>
 						<label for="type">Type of Request</label><br />
 						<select name="type" id="request">
-							<option value="support">Get support</option>
-							<option value="suggest">Suggest a site</option>
-							<option value="feedback">Send feedback</option>
-							<option value="info">General inquiry</option>
+							<option value="support" id="opt-support">Get support</option>
+							<option value="suggest" id="opt-suggest">Suggest a site</option>
+							<option value="feedback" id="opt-feedback">Send feedback</option>
+							<option value="info" id="opt-info">General inquiry</option>
 						</select>
+                        <script type="text/javascript">
+                          var opt = document.getElementById('opt-' + window.document.location.hash.substring(1));
+                          if (opt) opt.selected = true;
+                        </script>
 						</p>
 					<p>
 						<label for="name">Name</label><br />
@@ -75,8 +76,8 @@
 			<div id="footer">
 				<ul class="links">
 					<li><a href="http://twitter.com/designsceneapp">Follow us on Twitter</a></li>
-					<li><a href="support">Get support</a></li>
-					<li><a href="support/index.html#suggest">Suggest a site</a></li>
+					<li><a href="#support">Get support</a></li>
+					<li><a href="#suggest">Suggest a site</a></li>
 				</ul>
 				<ul class="legal">
 					<!--<li><a href="termsofuse.html">Terms of Use</a></li>
