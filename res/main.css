@@ -73,7 +73,7 @@ div#header h1 a span,div#header h3 a span {
 }
 
 div#description {
-	font: 1.875em/1.5em "Minion Pro", Georgia, "Times New Roman", Times, serif;	
+	font: 1.875em/1.5em "minion-pro-1","minion-pro-2", Georgia, "Times New Roman", Times, serif;	
 	color: #fff;
 	width: 640px;
 	margin: 72px 0 0 233px;
@@ -127,7 +127,7 @@ div#features ul li {
 	margin: 0;
 	list-style-type: disc;
 	list-style-position: inside;
-	font: italic 400 .667em/1.2em "Minion Pro", Georgia, "Times New Roman", Times, serif;
+	font: italic 400 .667em/1.2em "minion-pro-1","minion-pro-2", Georgia, "Times New Roman", Times, serif;
 }
 div#footer {
 	margin: 60px 0 30px 233px;
@@ -137,7 +137,7 @@ div#footer {
 	height: 100px;
 	border-top: 1px solid #ccc;
 	padding-top: 30px;
-	font: 300 .8em/1.2em "Museo Sans", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: 300 .8em/1.2em "museo-sans-1","museo-sans-2", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 ul.links {
 	width: 180px;
@@ -175,22 +175,21 @@ div#content {
 	color: #fff;
 	width: 640px;
 	margin: 130px 0 0 233px;
-	font: .8em/1.3em "Museo Sans", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: .8em/1.3em museo-sans-1, museo-sans-2, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 div#content p {
 	margin-bottom: 1em;
 }
 div#content h2 {
-	font-size: 2em;
-	font-weight: 700;
 	margin: 1em 0 .5em;
+	font: 400 3em minion-pro-1, minion-pro-2, Georgia, "Times New Roman", Times, serif;
 }
 div#content h3 {
 	text-indent: 0;
 	margin: 1em 0 .5em;
+	text-transform: uppercase;
 	font-size: 1.2em;
 	font-weight: 700;
-	text-transform: uppercase;
 }
 div#content li {
 	list-style-position: outside;
@@ -208,7 +207,7 @@ div#share {
 	padding: 0;
 }
 form {
-	font-family: "Museo Sans", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-family: "museo-sans-1","museo-sans-2", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 form p {
 	margin: 20px 0 10px;
@@ -250,12 +249,34 @@ label {
 	text-transform: uppercase;
 	font-size: .9em;
 }
+p.success {
+	width: 400px;
+	margin: 10px 0;
+	padding: 10px;
+	border: 1px solid #006518;
+	background-color: #b6f18e;
+	font: 1em "museo-sans-1","museo-sans-2", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #006518;
+}
+p.error {
+	width: 400px;
+	margin: 10px 0;
+	padding: 10px;
+	border: 1px solid #ba150b;
+	background-color: #f7b6a9;
+	font: 1em "museo-sans-1","museo-sans-2", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #ba150b;
+}
+
 
 .addthis_toolbox, .addthis_default_style {
 	margin: 0;
 	padding: 0;
 	width: 300px;
 }
+
+
+
 
 /* CONTEST STYLES */
 div#promo {
@@ -271,7 +292,7 @@ div#promo a:hover {
 	background: transparent url(contest_promo_hover.png) no-repeat scroll 0 0;
 }
 div#contest {
-	font: 1.5em/1.5em "Minion Pro", Georgia, "Times New Roman", Times, serif;	
+	font: 1.5em/1.5em "minion-pro-1","minion-pro-2", Georgia, "Times New Roman", Times, serif;	
 	color: #fff;
 	width: 687px;
 	margin: 72px 0 0 233px;
@@ -295,7 +316,7 @@ div#contest ul li {
 	margin: 0 0 10px;
 	list-style-type: disc;
 	list-style-position: outside;
-	font: italic 400 .8em/1.2em "Minion Pro", Georgia, "Times New Roman", Times, serif;
+	font: italic 400 .8em/1.2em "minion-pro-1","minion-pro-2", Georgia, "Times New Roman", Times, serif;
 }
 div#contest ul ul {
 	margin: 0 0 20px 40px;
@@ -311,7 +332,7 @@ div#contest p em {
 	font-style: italic;
 }
 p.thanks {
-	font: .5em "Museo Sans", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: .5em "museo-sans-1","museo-sans-2", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	text-transform: uppercase;
 	letter-spacing: .25em;
 	padding-top: 30px;
