@@ -431,16 +431,3 @@ p.btnEnter a:active {
 p.btnEnter a span {
 	display: none;
 }
-/* COMING SOON STYLES ONLY */
-
-div#features {
-	margin-left: 0px;
-}
-.soon {
-	font-weight: 400;
-	font-style: italic;
-	color: #305cb6;
-}
-
-
-
