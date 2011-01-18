@@ -1,16 +1,15 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
-		
-		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-		<meta http-equiv="Content-Language" content="en-us">
-		<meta name="ROBOTS" content="ALL">
-		<meta name="Copyright" content="Copyright (c) 2011 Lunar/Theory LLC. All rights reserved. Certain projects, images, and products are trademarks of and/or copyrighted by their respective owners.">
-		<meta name="description" content="DesignScene is a visual inspiration explorer for iPad.">
-		<meta name="keywords" content="design, inspiration, art, photography, architecture, fashion, industrial design, product design, design theory, design criticism, web design, graphic design, advertising">
-		<meta name="Rating" content="General">
-		<meta name="revisit-after" content="5 Days">
-		<meta name="viewport" content="width=960">
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Language" content="en-us" />
+		<meta name="ROBOTS" content="ALL" />
+		<meta name="Copyright" content="Copyright (c) 2011 Lunar/Theory LLC. All rights reserved. Certain projects, images, and products are trademarks of and/or copyrighted by their respective owners." />
+		<meta name="description" content="DesignScene is a visual inspiration explorer for iPad." />
+		<meta name="keywords" content="design, inspiration, art, photography, architecture, fashion, industrial design, product design, design theory, design criticism, web design, graphic design, advertising" />
+		<meta name="Rating" content="General" />
+		<meta name="revisit-after" content="5 Days" />
+		<meta name="viewport" content="width=960" />
 		
 		<title>DesignScene / Contact</title>
 		
@@ -19,7 +18,7 @@
 			/*<!CDATA[*/ @import url(../res/main.css); /*]]>*/
 		</style>
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
-        <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.pack.js"></script>;
+        <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.pack.js"></script>
 		<script type="text/javascript" src="http://use.typekit.com/soi1irf.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 		<script type="text/javascript">
@@ -49,8 +48,8 @@
                       $(e.form).find('label[for=' + e.id + ']').removeClass('highlight');
                   },
                   submitHandler: function(form) {
-//                      e.preventDefault();
                       var message;
+                      form = $(form);
                       $.ajax({
                           url: form.attr('action'),
                           type: form.attr('method'),
@@ -70,6 +69,7 @@
                               message.fadeIn(500);
                           }
                       });
+                      return false;
                   }
               });
           });
