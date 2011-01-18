@@ -269,14 +269,14 @@ p.error {
 }
 
 label.highlight
-{color:#ba150b;}
+{color:#ff8b2b;}
 
 label.highlight:after {
   content: ' (Required)';
 }
 
 input.highlight, textarea.highlight
-{border:4px solid #ba150b;}
+{border:4px solid #ff8b2b;}
 
 .addthis_toolbox, .addthis_default_style {
 	margin: 0;
