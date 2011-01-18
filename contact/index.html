@@ -19,6 +19,7 @@
 			/*<!CDATA[*/ @import url(../res/main.css); /*]]>*/
 		</style>
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
+        <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.pack.js"></script>;
 		<script type="text/javascript" src="http://use.typekit.com/soi1irf.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 		<script type="text/javascript">
@@ -35,30 +36,41 @@
         <script>
           $(document).ready(function() {
               $(document.getElementById('opt-' + window.document.location.hash.substring(1))).attr('selected', 'selected');
-              $('#contactform').submit(function (e) {
-                  e.preventDefault();
-                  var form = $(this);
-                  var message;
-                  $.ajax({
-                      url: form.attr('action'),
-                      type: form.attr('method'),
-                      contentType: form.attr('enctype'),
-                      data: form.serialize(),
-                      dataType: 'html',
-                      success: function () {
-                          message = '<p class="success">Your feedback was sent. Thank you for taking the time to get in touch.</p>';
-                      },
-                      error: function () {
-                          message = '<p class="error">Oops, something went wrong on our end. Please try again later.</p>';
-                      },
-                      complete: function () {
-                          message = jQuery(message);
-                          message.hide();
-                          $('#contactform').before(message);
-                          message.fadeIn(500);
-                      }
-                  });
-          return false;
+              $('#contactform').validate({
+                  errorClass: 'invalid',
+                  errorClass: 'req',
+                  errorPlacement: function () {},
+                  highlight: function(e) {
+                      $(e).addClass('highlight');
+                      $(e.form).find('label[for=' + e.id + ']').addClass('highlight');
+                  },
+                  unhighlight: function(e) {
+                      $(e).removeClass('highlight');
+                      $(e.form).find('label[for=' + e.id + ']').removeClass('highlight');
+                  },
+                  submitHandler: function(form) {
+//                      e.preventDefault();
+                      var message;
+                      $.ajax({
+                          url: form.attr('action'),
+                          type: form.attr('method'),
+                          contentType: form.attr('enctype'),
+                          data: form.serialize(),
+                          dataType: 'html',
+                          success: function () {
+                              message = '<p class="success">Your feedback was sent. Thank you for taking the time to get in touch.</p>';
+                          },
+                          error: function () {
+                              message = '<p class="error">Oops, something went wrong on our end. Please try again later.</p>';
+                          },
+                          complete: function () {
+                              message = jQuery(message);
+                              message.hide();
+                              $('#contactform').before(message);
+                              message.fadeIn(500);
+                          }
+                      });
+                  }
               });
           });
         </script>
@@ -76,7 +88,7 @@
                     <input type="hidden" name="app" value="DesignScene" />
 					<p>
 						<label for="type">Type of Request</label><br />
-						<select name="type" id="request">
+						<select name="type" id="request" class="required">
 							<option value="support" id="opt-support">Get support</option>
 							<option value="suggest" id="opt-suggest">Suggest a site</option>
 							<option value="feedback" id="opt-feedback">Send feedback</option>
@@ -85,15 +97,15 @@
 					</p>
 					<p>
 						<label for="name">Name</label><br />
-						<input type="text" name="name" id="name" />
+						<input type="text" name="name" id="name" class="required" />
 					</p>
 					<p>
 						<label for="email">Email</label><br />
-						<input type="text" name="email" id="email" />
+						<input type="text" name="email" id="email" class="required email" />
 					</p>
 					<p>
 						<label for="body">Message</label><br />
-						<textarea name="body" cols="40" rows="8" id="body"></textarea>
+						<textarea name="body" cols="40" rows="8" id="body" class="required"></textarea>
 					</p>
 					<p>
 						<input class="btn" type="image" src="../res/btn_send_clear.png" name="submit" id="submit" value="Send" />
