@@ -235,7 +235,7 @@ select,input,textarea {
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	color: #666;
-	width: 687px;
+	width: 477px;
 	font-size: 1.4em;
 }
 input,textarea {
@@ -268,7 +268,7 @@ label {
 	font-size: .9em;
 }
 p.success {
-	width: 687px;
+	width: 477px;
 	margin: 10px 0;
 	padding: 10px;
 	border: 1px solid #006518;
@@ -277,7 +277,7 @@ p.success {
 	color: #006518;
 }
 p.error {
-	width: 687px;
+	width: 477px;
 	margin: 10px 0;
 	padding: 10px;
 	border: 1px solid #ba150b;
