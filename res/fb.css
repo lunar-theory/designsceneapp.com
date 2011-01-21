@@ -46,7 +46,7 @@ div#header h1 a {
 div#description {
 	font: 1.875em/1.5em "Minion Pro", Georgia, "Times New Roman", Times, serif;	
 	width: 640px;
-	margin: 0 0 20px;
+	margin: 0 0 40px;
 }
 p.btnBuy {
 	float: left;
@@ -98,7 +98,7 @@ div#features ul li {
 	font: italic 400 .667em/1.2em "Minion Pro", Georgia, "Times New Roman", Times, serif;
 }
 div#footer {
-	margin: 60px 0 30px;
+	margin: 50px 0 30px;
 	color: #999;
 	text-decoration: none;
 	width: 640px;
@@ -138,6 +138,43 @@ ul.legal {
 	text-decoration: underline;
 	color: #3366cc;
 }
+
+div#reviews {
+	width: 640px;
+	margin-bottom: 30px;
+}
+div.review a {
+	width: 260px;
+	display: block;
+	float: left;
+	margin-right: 20px;
+	padding: 20px;
+	background-color: #333;
+	-moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    border-radius: 6px;
+}
+div.review a:hover, div.review a:active {
+	background-color: #666;
+	text-decoration: none;
+}
+div.review blockquote {
+	color: #fff;
+	font: italic 1.12em/1.75em minion-pro-1, minion-pro-2, Georgia, "Times New Roman", Times, serif;
+	font-weight: 400;
+	margin-bottom: .5em;
+	text-indent: -0.5em;
+}
+div.review p.source {
+	color: #fff;
+	font: 700 .8em museo-sans-1, museo-sans-2, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: .16em;
+	margin: 0;
+}
+
 
 /* CONTEST STYLES */
 div#promo {
