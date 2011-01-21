@@ -235,7 +235,7 @@ select,input,textarea {
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	color: #666;
-	width: 400px;
+	width: 687px;
 	font-size: 1.4em;
 }
 input,textarea {
@@ -268,7 +268,7 @@ label {
 	font-size: .9em;
 }
 p.success {
-	width: 400px;
+	width: 687px;
 	margin: 10px 0;
 	padding: 10px;
 	border: 1px solid #006518;
@@ -277,7 +277,7 @@ p.success {
 	color: #006518;
 }
 p.error {
-	width: 400px;
+	width: 687px;
 	margin: 10px 0;
 	padding: 10px;
 	border: 1px solid #ba150b;
@@ -299,7 +299,7 @@ input.highlight, textarea.highlight {
 /* -----CONTENT----- */
 div#content {
 	color: #fff;
-	width: 837px;
+	width: 687px;
 	font: .8em/1.3em museo-sans-1, museo-sans-2, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	margin: 0 0 0 123px;
 }
