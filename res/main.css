@@ -1,13 +1,10 @@
-/*
-Copyright (c) 2010, Yahoo! Inc. All rights reserved.
-Code licensed under the BSD License:
-http://developer.yahoo.com/yui/license.html
-version: 3.1.2
-build: 56
-*/
 html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
 
 /* -----DESIGNSCENE CSS----- */
+
+.clear {
+	clear: both;
+}
 a,a:link,a:visited {
 	text-decoration: none;
 	color: #bfdefc;
@@ -27,17 +24,19 @@ div#container {
 	width: 960px;
 	position:relative;
 	text-align:left;
-	padding-bottom: 10px;
 	margin: 0 auto 20px;
-	font-weight: 400;
-	font-style: normal;
+}
+
+/* -----HEADER----- */
+div#header {
+	height: 250px;
 }
 div#header h1 {
 	width: 480px;
 	height: 102px;
 	background: transparent url(ds_logo.png) no-repeat scroll left top;
-	left: 233px;
-	top: 105px;
+	left: 123px;
+	top: 82px;
 	position: relative;
 	text-indent: -9999px;
 }
@@ -50,8 +49,8 @@ div#header h1 a {
 div#header h3 {
 	width: 147px;
 	height: 51px;
-	left: 774px;
-	top: 115px;
+	left: 660px;
+	top: 92px;
 	position: absolute;
 	text-indent: -9999px;
 }
@@ -72,15 +71,26 @@ div#header h1 a span,div#header h3 a span {
 	display: none;
 }
 
+/* -----COLUMN 1----- */
+div#column1 {
+	width: 600px;
+	margin-right: 60px;
+	float: left;
+}
+div#movie {
+	margin: 0 0 30px;
+}
 div#description {
 	font: 1.875em/1.5em "minion-pro-1","minion-pro-2", Georgia, "Times New Roman", Times, serif;	
+	font-weight: 400;
 	color: #fff;
-	width: 640px;
-	margin: 72px 0 0 233px;
 }
-
-div#movie {
-	margin: 40px 0 30px;
+div#description p {
+	margin: 30px 0 15px;
+}
+div#description p em {
+	font-weight: 700;
+	font-style: italic;
 }
 p.btnBuy {
 	float: left;
@@ -102,17 +112,10 @@ p.btnBuy a:active {
 p.btnBuy a span {
 	display: none;
 }
-div#description p {
-	margin: 30px 0 15px;
-}
-div#description p em {
-	font-weight: 700;
-	font-style: italic;
-}
 
 div#features {
 	float: left;
-	width: 420px;
+	width: 380px;
 	margin: 6px 0 0 40px;
 }
 div#features p {
@@ -129,11 +132,62 @@ div#features ul li {
 	list-style-position: inside;
 	font: italic 400 .667em/1.2em "minion-pro-1","minion-pro-2", Georgia, "Times New Roman", Times, serif;
 }
+div#share {
+	margin: 40px 0 0;
+	padding: 0;
+}
+.addthis_toolbox, .addthis_default_style {
+	margin: 0;
+	padding: 0;
+	width: 300px;
+}
+
+/* -----COLUMN 2----- */
+div#column2 {
+	width: 300px;
+	float: left;
+}
+div.review {
+	margin-bottom: 30px;
+}
+div.review a {
+	width: 260px;
+	padding: 20px;
+	background-color: #333;
+	-moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    border-radius: 6px;
+	display: block;
+}
+div.review a:hover, div.review a:active {
+	background-color: #666;
+	text-decoration: none;
+}
+div.review blockquote {
+	color: #fff;
+	font: italic 1.12em/1.75em minion-pro-1, minion-pro-2, Georgia, "Times New Roman", Times, serif;
+	font-weight: 400;
+	margin-bottom: .5em;
+	text-indent: -0.5em;
+}
+div.review p.source {
+	color: #fff;
+	font: 700 .8em museo-sans-1, museo-sans-2, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: .16em;
+	margin: 0;
+}
+div.twtr-doc {
+	font-family: museo-sans-1, museo-sans-2, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+/* -----FOOTER----- */
 div#footer {
-	margin: 60px 0 30px 233px;
+	margin: 60px 0 30px;
 	color: #999;
 	text-decoration: none;
-	width: 640px;
 	height: 100px;
 	border-top: 1px solid #ccc;
 	padding-top: 30px;
@@ -152,9 +206,6 @@ ul.legal {
 	line-height: 1.2em;
 	color: #666;
 }
-.clear {
-	clear: both;
-}
 #footer a,#footer a:link,#footer a:visited {
 	text-decoration: none;
 	color: #ccc;
@@ -171,41 +222,8 @@ ul.legal {
 	text-decoration: underline;
 	color: #3366cc;
 }
-div#content {
-	color: #fff;
-	width: 640px;
-	margin: 130px 0 0 233px;
-	font: .8em/1.3em museo-sans-1, museo-sans-2, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-}
-div#content p {
-	margin-bottom: 1em;
-}
-div#content h2 {
-	margin: 1em 0 .5em;
-	font: 400 3em minion-pro-1, minion-pro-2, Georgia, "Times New Roman", Times, serif;
-}
-div#content h3 {
-	text-indent: 0;
-	margin: 1em 0 .5em;
-	text-transform: uppercase;
-	font-size: 1.2em;
-	font-weight: 700;
-}
-div#content li {
-	list-style-position: outside;
-	list-style-type: decimal;
-	margin: 0 0 .5em 1.5em;
-}
-div#content strong {
-	font-weight: 700;
-}
-div#content em {
-	font-style: italic;
-}
-div#share {
-	margin: 40px 0 0;
-	padding: 0;
-}
+
+/* -----CONTACT----- */
 form {
 	font-family: "museo-sans-1","museo-sans-2", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
@@ -268,166 +286,45 @@ p.error {
 	color: #ba150b;
 }
 
-label.highlight
-{color:#ff8b2b;}
-
+label.highlight {
+	color:#ff8b2b;
+}
 label.highlight:after {
   content: ' (Required)';
 }
-
-input.highlight, textarea.highlight
-{border:4px solid #ff8b2b;}
-
-.addthis_toolbox, .addthis_default_style {
-	margin: 0;
-	padding: 0;
-	width: 300px;
+input.highlight, textarea.highlight {
+	border:4px solid #ff8b2b;
 }
 
-
-
-
-/* CONTEST STYLES */
-div#promo {
-	background: transparent url(contest_promo.png) no-repeat scroll 0 0;
-}
-div#promo a {
-	width: 640px;
-	height: 200px;
-	text-indent: -9999px;
-	display: block;
-}
-div#promo a:hover {
-	background: transparent url(contest_promo_hover.png) no-repeat scroll 0 0;
-}
-div#contest {
-	font: 1.5em/1.5em "minion-pro-1","minion-pro-2", Georgia, "Times New Roman", Times, serif;	
+/* -----CONTENT----- */
+div#content {
 	color: #fff;
-	width: 687px;
-	margin: 72px 0 0 233px;
+	width: 837px;
+	font: .8em/1.3em museo-sans-1, museo-sans-2, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	margin: 0 0 0 123px;
 }
-div#contest h2 {
-	width: 687px;
-	height: 132px;
-	background: transparent url(contest_h2_inspires.png) no-repeat scroll left top;
-	text-indent: -9999px;
-	display: inline-block;
-	float: left;
-	margin: 40px 0 30px -60px;
+div#content h2 {
+	margin: 0 0 .5em;
+	font: 400 3em minion-pro-1, minion-pro-2, Georgia, "Times New Roman", Times, serif;
 }
-
-
-div#contest ul {
-	margin: 20px 0 30px 40px;
-}
-
-div#contest ul li {
-	margin: 0 0 10px;
-	list-style-type: disc;
-	list-style-position: outside;
-	font: italic 400 .8em/1.2em "minion-pro-1","minion-pro-2", Georgia, "Times New Roman", Times, serif;
-}
-div#contest ul ul {
-	margin: 0 0 20px 40px;
-}
-div#contest ul ul li {
-	margin: 0 0 6px;
-}
-div#contest p {
-	margin-bottom: 20px;
-}
-div#contest p em {
-	font-weight: 700;
-	font-style: italic;
-}
-p.thanks {
-	font: .5em "museo-sans-1","museo-sans-2", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+div#content h3 {
+	text-indent: 0;
+	margin: 1em 0 .5em;
 	text-transform: uppercase;
-	letter-spacing: .25em;
-	padding-top: 30px;
+	font-size: 1.2em;
+	font-weight: 700;
 }
-div#contest ul#sponsors {
-	margin: 20px 0 0;
-	padding: 0;
+div#content p {
+	margin-bottom: 1em;
 }
-div#contest ul#sponsors li {
-	display: block;
-	padding: 0;
-	margin: 20px 0 0;
+div#content li {
+	list-style-position: outside;
+	list-style-type: decimal;
+	margin: 0 0 .5em 1.5em;
 }
-
-li#commarts a {
-	float: left;
-	width: 185px;
-	height: 43px;
-	text-indent: -9999px;
-	background: transparent url(contest_commarts.png) no-repeat scroll 0 -43px;
-	margin: 14px 30px 0 0;
-	padding: 0;
+div#content strong {
+	font-weight: 700;
 }
-li#commarts a:hover {
-	background-position: 0 0px;
-}
-
-li#printmag a {
-	float: left;
-	list-style-type: none;
-	width: 113px;
-	height: 30px;
-	text-indent: -9999px;
-	background: transparent url(contest_print.png) no-repeat scroll 0 -30px;
-	margin: 27px 30px 0 0;
-	padding: 0;
-}
-li#printmag a:hover {
-	background-position: 0 0px;
-}
-li#how a {
-	float: left;
-	width: 66px;
-	height: 43px;
-	text-indent: -9999px;
-	background: transparent url(contest_how.png) no-repeat scroll 0 -43px;
-	margin: 14px 30px 0 0;
-	padding: 0;
-}
-li#how a:hover {
-	background-position: 0 0px;
-}
-li#smashing a {
-	float: left;
-	width: 220px;
-	height: 65px;
-	text-indent: -9999px;
-	background: transparent url(contest_smashing.png) no-repeat scroll 0 -65px;
-	padding: 0;
-	margin: 0;
-}
-li#smashing a:hover {
-	background-position: 0 0px;
-}
-
-div#contestshare {
-	margin: 0 0 0 30px;
-	float: left;
-}
-p.btnEnter {
-	margin: 0 40px 60px 0;
-	float: left;
-}
-p.btnEnter a {
-	width: 200px;
-	height: 64px;
-	text-indent: -9999px;
-	background: transparent url(btn_enternow.png) no-repeat scroll 0 0;
-	display: block;
-}
-p.btnEnter a:hover {
-	background-position: 0 -65px;
-}
-p.btnEnter a:active {
-	background-position: 0 -130px;
-}
-p.btnEnter a span {
-	display: none;
+div#content em {
+	font-style: italic;
 }
