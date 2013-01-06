@@ -1,92 +1,81 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-	<head>
-		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-		<meta http-equiv="Content-Language" content="en-us" />
-		<meta name="ROBOTS" content="ALL" />
-		<meta name="Copyright" content="Copyright (c) 2011 Lunar/Theory LLC. All rights reserved. Certain descriptions, images, and products may be trademarks of and/or copyrighted by their respective owners.">
-		<meta name="description" content="DesignScene is a visual inspiration explorer for iPad." />
-		<meta name="keywords" content="design, inspiration, art, photography, architecture, fashion, industrial design, product design, design theory, design criticism, web design, graphic design, advertising" />
-		<meta name="Rating" content="General" />
-		<meta name="revisit-after" content="5 Days" />
-		<meta name="viewport" content="width=980" />
-		
-		<title>DesignScene / Contact</title>
-		
-		<link rel="icon" type="image/png" href="../res/favicon.png" />
-		<style type="text/css" media="screen">
-			/*<!CDATA[*/ @import url(../res/main.css); /*]]>*/
-		</style>
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
-        <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.pack.js"></script>
-		<script type="text/javascript" src="http://use.typekit.com/soi1irf.js"></script>
-		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-		<script type="text/javascript">
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-20523658-1']);
-		  _gaq.push(['_trackPageview']);
-		
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-		</script>
-        <script>
-          $(document).ready(function() {
-              $(document.getElementById('opt-' + window.document.location.hash.substring(1))).attr('selected', 'selected');
-              $('#contactform').validate({
-                  errorClass: 'invalid',
-                  errorClass: 'req',
-                  errorPlacement: function () {},
-                  highlight: function(e) {
-                      $(e).addClass('highlight');
-                      $(e.form).find('label[for=' + e.id + ']').addClass('highlight');
-                  },
-                  unhighlight: function(e) {
-                      $(e).removeClass('highlight');
-                      $(e.form).find('label[for=' + e.id + ']').removeClass('highlight');
-                  },
-                  submitHandler: function(form) {
-                      var message;
-                      form = $(form);
-                      $.ajax({
-                          url: form.attr('action'),
-                          type: form.attr('method'),
-                          contentType: form.attr('enctype'),
-                          data: form.serialize(),
-                          dataType: 'html',
-                          success: function () {
-                              message = '<p class="success">Your feedback was sent. Thank you for taking the time to get in touch.</p>';
-                          },
-                          error: function () {
-                              message = '<p class="error">Oops, something went wrong on our end. Please try again later.</p>';
-                          },
-                          complete: function () {
-                              message = jQuery(message);
-                              message.hide();
-                              $('#contactform').before(message);
-                              message.fadeIn(500);
-                          }
-                      });
-                      return false;
-                  }
-              });
-          });
-        </script>
-	</head>
-	<body>
-		<div id="container">
-			<div id="header">
-				<h1><a href="http://www.designsceneapp.com/"><span>DesignScene: An inspiration explorer for iPad&trade;</span></a></h1>
-				<h3><a href="http://click.linksynergy.com/fs-bin/click?id=A02TGM5m7DQ&subid=&offerid=146261.1&type=10&tmpid=3909&RD_PARM1=http%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Fdesignscene%2Fid412753716%3Fmt%3D8%2526ls%3D1" title="Available on the App Store"><span>Available on the App Store</span></a></h3>
-			</div>
-			<div id="content">
-				<h2>Contact Us</h2>
+
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="Content-Language" content="en-us">
+	<meta name="ROBOTS" content="ALL">
+	<meta name="Copyright" content="Copyright (c) 2011-2013 Lunar/Theory, LLC. All rights reserved. Certain descriptions, images, and products may be trademarks of and/or copyrighted by their respective owners.">
+	<meta name="description" content="DesignScene is a visual inspiration explorer for iPad.">
+	<meta name="keywords" content="design, inspiration, art, photography, architecture, fashion, industrial design, product design, design theory, design criticism, web design, graphic design, advertising">
+	<meta name="Rating" content="General">
+	<meta name="revisit-after" content="5 Days">
+	<meta name="viewport" content="width=1084">
+	<meta name="apple-itunes-app" content="app-id=412753716, affiliate-data=A02TGM5m7DQ">
+	<title>Contact Us | DesignScene: Daily Design Inspiration for iPad</title>
+	<link rel="icon" type="image/png" href="/res/favicon.png">
+	<style type="text/css" media="screen">
+		/*<!CDATA[*/ @import url(/res/main.css); /*]]>*/
+	</style>
+	<script type="text/javascript">
+	  $(document).ready(function() {
+	      $(document.getElementById('opt-' + window.document.location.hash.substring(1))).attr('selected', 'selected');
+	      $('#contactform').validate({
+	          errorClass: 'invalid',
+	          errorClass: 'req',
+	          errorPlacement: function () {},
+	          highlight: function(e) {
+	              $(e).addClass('highlight');
+	              $(e.form).find('label[for=' + e.id + ']').addClass('highlight');
+	          },
+	          unhighlight: function(e) {
+	              $(e).removeClass('highlight');
+	              $(e.form).find('label[for=' + e.id + ']').removeClass('highlight');
+	          },
+	          submitHandler: function(form) {
+	              var message;
+	              form = $(form);
+	              $.ajax({
+	                  url: form.attr('action'),
+	                  type: form.attr('method'),
+	                  contentType: form.attr('enctype'),
+	                  data: form.serialize(),
+	                  dataType: 'html',
+	                  success: function () {
+	                      message = '<p class="success">Your feedback was sent. Thank you for taking the time to get in touch.</p>';
+	                  },
+	                  error: function () {
+	                      message = '<p class="error">Oops, something went wrong on our end. Please try again later.</p>';
+	                  },
+	                  complete: function () {
+	                      message = jQuery(message);
+	                      message.hide();
+	                      $('#contactform').before(message);
+	                      message.fadeIn(500);
+	                  }
+	              });
+	              return false;
+	          }
+	      });
+	  });
+	</script>
+</head>
+
+<body class="interior">
+	<div id="container">
+		<div class="header interior">
+			<a href="/"><h1>DesignScene</h1></a>
+			<h2>Daily Design Inspiration for iPad</h2>
+			<p class="AppStore"><a href="http://bit.ly/eIsh3J"><span>Download on the App Store</span></a></p>
+			<br class="clear">
+		</div>
+		<div id="content">
+			<div class="contact">
+				<h1 class="alpha">Contact Us</h1>
 				<form id="contactform" name="contactform" method="post" action="/contact/new/" enctype="application/x-www-form-urlencoded; charset=UTF-8">
-                    <input type="hidden" name="app" value="DesignScene" />
+				    <input type="hidden" name="app" value="DesignScene">
 					<p>
-						<label for="type">Type of Request</label><br />
+						<label for="type">Type of Request</label><br>
 						<select name="type" id="request" class="required">
 							<option value="support" id="opt-support">Get support</option>
 							<option value="info" id="opt-suggest">Suggest a site</option>
@@ -95,37 +84,47 @@
 						</select>
 					</p>
 					<p>
-						<label for="name">Name</label><br />
-						<input type="text" name="name" id="name" class="required" />
+						<label for="name">Name</label><br>
+						<input type="text" name="name" id="name" class="required">
 					</p>
 					<p>
-						<label for="email">Email</label><br />
-						<input type="text" name="email" id="email" class="required email" />
+						<label for="email">Email</label><br>
+						<input type="text" name="email" id="email" class="required email">
 					</p>
 					<p>
-						<label for="body">Message</label><br />
+						<label for="body">Message</label><br>
 						<textarea name="body" cols="40" rows="8" id="body" class="required"></textarea>
 					</p>
 					<p>
-						<input class="btn" type="image" src="../res/btn_send_clear.png" name="submit" id="submit" value="Send" />
+						<input class="btn" type="image" src="/res/SendButton_Clear.svg" name="submit" id="submit" value="Send">
 					</p>
 				</form>
 			</div>
+			<hr class="clear">
 			<div id="footer">
-				<ul class="links">
-					<li><a href="http://twitter.com/designsceneapp" title="Follow us on Twitter">Follow us on Twitter</a></li>
-					<li><a href="http://blog.lunar-theory.com" title="Read our blog">Read our blog</a></li>
-					<li><a href="/contact/#support" title="Get support">Get support</a></li>
-					<li><a href="/contact/#suggest" title="Suggest a site">Suggest a site</a></li>
-					<li><a href="/contact/#feedback" title="Send feedback">Send feedback</a></li>
+				<ul>
+					<li><a href="http://twitter.com/designsceneapp">Follow us on Twitter</a></li>
+					<li><a href="http://blog.lunar-theory.com/">Read our blog</a></li>
+					<li><a href="http://www.designsceneapp.com/contact/#support">Get support</a></li>
+					<li><a href="http://www.designsceneapp.com/contact/#suggest">Suggest a site</a></li>
+					<li><a href="http://www.designsceneapp.com/contact/#feedback">Send feedback</a></li>
 				</ul>
-				<ul class="legal">
-					<!--<li><a href="termsofuse.html">Terms of Use</a></li>
-					<li><a href="privacypolicy.html">Privacy Policy</a></li>-->
-					<li>Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. iPad is a trademark of Apple Inc.</li>
-					<li>&copy; 2011 <a href="http://www.lunar-theory.com/">Lunar/Theory</a>. All rights reserved.</li>
-				</ul>
+				<p class="legal">Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. iPad is a trademark of Apple Inc.<br>
+				© 2011–2013 Lunar/Theory, LLC. All rights reserved.</p>
 			</div>
 		</div>
-	</body>
+<script type="text/javascript" src="/res/retina.js"></script>
+<script type="text/javascript">
+//		  var _gaq = _gaq || [];
+//		  _gaq.push(['_setAccount', 'UA-20523658-1']);
+//		  _gaq.push(['_trackPageview']);
+//		
+//		  (function() {
+//		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+//		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+//		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+//		  })();
+</script>
+</body>
+
 </html>
