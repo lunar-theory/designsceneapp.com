@@ -482,3 +482,41 @@ label.highlight:after {
 input.highlight, textarea.highlight {
 	border:4px solid #ff8b2b;
 }
+
+/* Retina */
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+    html {
+	    background: url(Texture-12@2x.jpg) repeat scroll 0 0;
+    }
+
+    body {
+	    background: url(WallPattern@2x.jpg) no-repeat scroll center top;
+    }
+
+    body.interior {
+	    background: url(WallPattern-Interior.jpg) no-repeat scroll center top;
+    }
+
+    div#iPad {
+	    background: url(iPad@2x.png) no-repeat scroll 0 0;
+        background-size: 611px 382px;
+    }
+    div#iPad a:hover {
+	    background: url(iPad-hover@2x.png) no-repeat scroll 0 0;
+        background-size: 392px 295px;
+    }
+
+    .header h1 {
+	    background: url(DesignSceneLogo@2x.png) no-repeat scroll 0 0;
+        background-size: 627px 133px;
+    }
+    a#ss1 {
+	    background: url(DesignScene_Screenshot_1_thumbnail@2x.jpg) no-repeat scroll 0 0px;
+        background-size: 264px 364px;
+    }
+
+    a#ss2 {
+	    background: url(DesignScene_Screenshot_2_thumbnail@2x.jpg) no-repeat scroll 0 0px;
+        background-size: 243px 364px;
+    }
+}
