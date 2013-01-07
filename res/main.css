@@ -348,15 +348,18 @@ a#ss2.screenshot:hover {
 
 /* ACCOLADES */
 
-div.column div.accolade p.quote {
+div.accolade {
+	margin-bottom: 20px;
+	font: 14px/1.4em source_sans_proregular, Arial, Helvetica, Geneva, sans-serif;
+}
+
+div.accolade p {
 	font: 14px/1.4em source_sans_proregular, Arial, Helvetica, Geneva, sans-serif;
 	color: #666;
 }
 
-div.column div.accolade p.attribution {
-	font: normal 14px/1.4em source_sans_proregular, Arial, Helvetica, Geneva, sans-serif;
+p.attribution {
 	text-align: right;
-	color: #666;
 	text-transform: uppercase;
 	margin-top: -10px;
 } 
@@ -365,10 +368,11 @@ div.accolade a,
 div.accolade a:link,
 div.accolade a:visited {
 	color: #666;
+	text-decoration: none;
 }
 
-a:hover div.accolade p.quote,
-a:hover div.accolade p.attribution {
+div.accolade a:hover p,
+div.accolade a:hover p.attribution {
 	background-color: #ff6428;
 	color: white;
 	text-shadow: none;
