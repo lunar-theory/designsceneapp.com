@@ -304,6 +304,11 @@ div.column {
 	margin-left: 114px !important;
 }
 
+.fullwidth {
+	width: 850px !important;
+	margin: 0px 0 60px 114px !important;	
+}
+
 div.column h1,
 .contact h1 {
 	font: 23px/31px source_sans_probold, Arial, Helvetica, Geneva, sans-serif;
@@ -311,7 +316,9 @@ div.column h1,
 	margin: 20px 0 10px;
 }
 
-div.column p {
+div.column p,
+div.column ol,
+div.column ol li {
 	font: 18px/1.2em ofl_sorts_mill_goudyregular;
 	margin-bottom: 10px;
 }
@@ -319,6 +326,23 @@ div.column p {
 div.column h2 {
 	font: 23px/31px ofl_sorts_mill_goudyitalic;
 	margin-bottom: 10px;	
+}
+
+div.column em {
+	font-family: ofl_sorts_mill_goudyitalic;
+}
+
+div.column h3 {
+	font: 18px/1.2em source_sans_probold, Arial, Helvetica, Geneva, sans-serif;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+div.column ol li {
+	list-style: decimal;
+	list-style-position: inside;
+	margin-left: 2em;
+	text-indent: -1em;
 }
 
 a.screenshot,
