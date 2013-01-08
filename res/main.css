@@ -405,25 +405,30 @@ div.accolade a:hover p.attribution {
 
 /* FOOTER */
 
-div.footer {
+div#footer {
 	width: 100%;
+	font: 14px source_sans_proregular, Arial, Helvetica, Geneva, sans-serif;
+	padding-bottom: 60px;
 }
 
-div#footer ul {
+div#footer ul.column1 {
 	margin-left: 114px;
 	float: left;
-	margin-bottom: 60px;
+	width: 12%;
+	padding-right: 30px;
 }
 
-div#footer ul li {
-	font: 14px source_sans_proregular, Arial, Helvetica, Geneva, sans-serif;
+div#footer ul.column2 {
+	float: left;
+	width: 12%;
+	padding-right: 30px;
 }
 
 div#footer p.legal {
-	width: 547px;
+	float: left;
+	width: 57%;
 	font: 10px source_sans_proregular, Arial, Helvetica, Geneva, sans-serif;
 	color: #666;
-	margin-left: 417px;
 }
 
 /* CONTACT */
